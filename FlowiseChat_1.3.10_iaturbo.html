@@ -1,0 +1,64 @@
+<html>
+
+<body>
+
+    <flowise-fullchatbot></flowise-fullchatbot>
+
+    <script type="module">
+        import Chatbot from "https://iaturbo.com.br/wp-content/uploads/flowiseai/web_1.3.10_iaturbo.js"
+
+        Chatbot.initFull({
+            chatflowid: "9ac11010-3365-4d8a-b1fd-aa735cda1d0f",
+            apiHost: "https://flowiseai-railway-production-16fe.up.railway.app",
+            theme: {
+                chatWindow: {
+                    showTitle: true,
+                    title: 'Fale com a IARA',
+                    titleAvatarSrc: 'https://iaturbo.com.br/wp-content/uploads/2024/01/happy-robot-1.png',
+                    showAgentMessages: false,
+                    welcomeMessage: 'Olá! Sou a IARA, sua parceira em inovação com os Chatbots IATurbo. Me diga quem é você e como posso ajudar a transformar seu negócio hoje! 🚀🤖',
+                    errorMessage: 'Ops... um erro aconteceu aqui',
+                    backgroundColor: "#131416",
+                    height: 500,
+                    //width: 400,
+                    fontSize: 16,
+                    poweredByTextColor: "#43d9ea",
+                    botMessage: {
+                        backgroundColor: "black",
+                        textColor: "white",
+                        showAvatar: true,
+                        avatarSrc: "https://iaturbo.com.br/wp-content/uploads/2023/10/GuruTurboX2.gif",
+                    },
+                    userMessage: {
+                        backgroundColor: "black",
+                        textColor: "#43d9ea",
+                        showAvatar: true,
+                        avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png",
+                    },
+                    textInput: {
+                        placeholder: 'Faça sua pergunta...',
+                        backgroundColor: 'black',
+                        textColor: '#43d9ea',
+                        sendButtonColor: '#43d9ea',
+                        maxChars: 1000,
+                        maxCharsWarningMessage: 'Você excedeu o limite de caracteres. Por favor digite perguntas com menos de 1000 caracteres.',
+                        autoFocus: true,
+                        sendMessageSound: true,
+                        receiveMessageSound: true,
+                    },
+                    feedback: {
+                        color: '#43d9ea',
+                    },
+                    footer: {
+                        textColor: '#43d9ea',
+                        text: 'Criado por',
+                        company: 'IATurbo',
+                        companyLink: 'https://iaturbo.com.br/chatbots/',
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
